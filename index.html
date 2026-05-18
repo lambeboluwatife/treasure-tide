@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Treasure Tide</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="game-container">
+      <canvas id="gameCanvas" width="400" height="600"></canvas>
+      <div id="game-stats">
+        <span class="stat-icon">🪙</span
+        ><span class="stat-value"
+          ><span id="fish-count">0</span
+          ><span class="hearts">❤️❤️❤️</span></span
+        >
+      </div>
+      <button id="mute-button" aria-label="Toggle sound">🔊</button>
+      <div id="home-menu">
+        <div class="menu-panel">
+          <h1>Treasure Tide</h1>
+          <p>
+            Dive into the depths and reel in riches! Avoid the lurking dangers
+            and see how much treasure you can haul up before the tide turns
+            against you.
+          </p>
+          <button id="start-button">Cast Off</button>
+        </div>
+      </div>
+      <div id="game-over">
+        <h2>Caught! 🎣</h2>
+        <p>You've been snagged by the deep sea.</p>
+        <button id="restart-button">Play Again</button>
+      </div>
+      <div id="game-win">
+        <h2>Treasure Found! 🐠</h2>
+        <p>Your treasure haul is complete.</p>
+        <button id="play-again-button">Play Again</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,4 @@
+- the items coming down ae too fast
+- use shark/whale instead of jellyfish
+- add a bubble effect or any effects when the ship eat any items with different colors
+- add a background to the main board

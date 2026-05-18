@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #061020;
+  font-family: "Cinzel", Georgia, serif;
+}
+
+#game-container {
+  position: relative;
+}
+
+canvas {
+  border: 2px solid #f0c040;
+  box-shadow: 0 0 12px #f0c040;
+  background-color: transparent;
+}
+
+#game-stats {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffd700;
+  text-shadow: 0 0 8px #ff9900;
+  background: rgba(0, 10, 30, 0.75);
+  backdrop-filter: blur(8px);
+  padding: 8px 14px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 150px;
+  justify-content: center;
+  z-index: 5;
+}
+
+#mute-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 10, 30, 0.75);
+  color: #ffd700;
+  border: 1px solid rgba(255, 208, 64, 0.5);
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(240, 192, 64, 0.35);
+  cursor: pointer;
+  z-index: 10;
+}
+
+#mute-button:hover {
+  filter: brightness(1.2);
+}
+
+#game-stats .stat-icon {
+  font-size: 14px;
+}
+
+#game-stats .stat-value {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#game-stats .hearts {
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+#home-menu {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 5, 20, 0.9);
+  z-index: 20;
+}
+
+#home-menu .menu-panel {
+  text-align: center;
+  background: rgba(0, 10, 30, 0.85);
+  border: 2px solid #f0c040;
+  padding: 30px 28px 24px;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(240, 192, 64, 0.35);
+  color: #f7f7ff;
+  max-width: 340px;
+  width: 100%;
+}
+
+#home-menu h1 {
+  margin: 0 0 12px;
+  font-size: 34px;
+  color: #ffd700;
+  text-shadow: 0 0 12px #ff9900;
+}
+
+#home-menu p {
+  margin: 0 0 20px;
+  color: #cfe7ff;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+#game-over,
+#game-win {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 5, 20, 0.88);
+  padding: 24px;
+  border-radius: 14px;
+  text-align: center;
+  display: none;
+  z-index: 25;
+  min-width: 240px;
+}
+
+#game-over {
+  border: 2px solid #f0c040;
+  color: #ff6b6b;
+}
+
+#game-win {
+  border: 2px solid #00ffcc;
+  color: #ffd700;
+}
+
+#game-over h2,
+#game-win h2 {
+  margin: 0 0 14px;
+  font-size: 28px;
+}
+
+#game-over p,
+#game-win p {
+  margin: 0 0 18px;
+  color: inherit;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background: linear-gradient(#f0a500, #c07000);
+  color: white;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0 0 10px #f0c040;
+  transition:
+    filter 0.2s ease,
+    transform 0.2s ease;
+}
+
+button:hover {
+  filter: brightness(1.2);
+  transform: translateY(-1px);
+}
+
+button:focus {
+  outline: none;
+}
+
+#mute-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid rgba(240, 192, 64, 0.35);
+  background: rgba(0, 10, 30, 0.85);
+  color: #ffd700;
+  font-size: 18px;
+  box-shadow: 0 0 10px rgba(240, 192, 64, 0.25);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 30;
+}
+
+#mute-button:hover {
+  filter: brightness(1.2);
+}
