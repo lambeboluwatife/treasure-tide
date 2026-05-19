@@ -15,6 +15,51 @@ body {
   position: relative;
 }
 
+#game-title {
+  color: #ffd700;
+  font-size: 22px;
+  text-align: center;
+  margin: 0 0 8px 0;
+  text-shadow: 0 0 10px #ff9900;
+  animation: goldGlow 2.5s ease-in-out infinite;
+}
+
+@keyframes goldGlow {
+  0%,
+  100% {
+    text-shadow:
+      0 0 10px #ff9900,
+      0 0 20px #ffd700;
+    opacity: 0.85;
+  }
+  50% {
+    text-shadow:
+      0 0 20px #ff9900,
+      0 0 40px #ffd700,
+      0 0 60px #ffaa00;
+    opacity: 1;
+  }
+}
+
+#milestone-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffd700;
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: 0 0 10px #ff9900;
+  pointer-events: none;
+  opacity: 0;
+  z-index: 15;
+  transition: opacity 0.5s ease-out;
+}
+
+#milestone-message.show {
+  opacity: 1;
+}
+
 canvas {
   border: 2px solid #f0c040;
   box-shadow: 0 0 12px #f0c040;
@@ -23,7 +68,7 @@ canvas {
 
 #game-stats {
   position: absolute;
-  top: 10px;
+  top: 50px;
   left: 10px;
   font-size: 14px;
   font-weight: bold;
@@ -43,7 +88,7 @@ canvas {
 
 #mute-button {
   position: absolute;
-  top: 10px;
+  top: 0px;
   right: 10px;
   width: 42px;
   height: 42px;

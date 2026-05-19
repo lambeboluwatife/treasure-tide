@@ -8,15 +8,18 @@
   </head>
   <body>
     <div id="game-container">
+      <h1 id="game-title">Treasure Tide</h1>
       <canvas id="gameCanvas" width="400" height="600"></canvas>
-      <div id="game-stats">
-        <span class="stat-icon">🪙</span
-        ><span class="stat-value"
-          ><span id="fish-count">0</span
-          ><span class="hearts">❤️❤️❤️</span></span
-        >
+      <div id="milestone-message"></div>
+      <div id="hud">
+        <div id="game-stats">
+          <span class="stat-icon">🪙</span
+          ><span class="stat-value"
+            ><span id="fish-count">0</span
+            ><span class="hearts">❤️❤️❤️</span></span
+          >
+        </div>
       </div>
-      <button id="mute-button" aria-label="Toggle sound">🔊</button>
       <div id="home-menu">
         <div class="menu-panel">
           <h1>Treasure Tide</h1>
